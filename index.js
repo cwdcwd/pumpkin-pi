@@ -4,14 +4,17 @@ var async = require('async');
 var config = require('config');
 var gpio = require('pi-gpio');
 
-/*
-gpio.open(config.PIN_LED02, 'output', function(err) { // Open pin for output
-    gpio.write(config.PIN_LED02, 1, function() { // Set pin high (1)
-        gpio.close(config.PIN_LED02); // Close pin
+
+gpio.open(39, 'output', function(err) { // Open pin for output
+    gpio.write(39, 1, function() { // Set pin high (1)
+        setTimeout(function() {
+            gpio.close(39); // Close pin
+        }, 3000)
+
     });
 });
-*/
 
+/*
 async.parallel([
     function(cb) {
         console.log('opening Trigger for output on ' + config.PIN_SR04_TRIGGER);
@@ -40,6 +43,10 @@ async.parallel([
         });
     }
 });
+
+*/
+
+
 //read SR04
 //check distance
 //onThreshold
