@@ -16,6 +16,7 @@
     "async": "^2.1.2",
     "config": "^1.21.0",
     "lodash": "^4.16.4",
+    "mmm-usonic": "^2.5.3",
     "node-aplay": "^1.0.3",
     "pi-gpio": "0.0.8"
   }
