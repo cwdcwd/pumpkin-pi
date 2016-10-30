@@ -45,3 +45,4 @@ jspm_packages
 *.tgz
 # ===== End Node.gitignore =====
 
+*.rdb
